@@ -4,6 +4,25 @@ body {
 	background-color: #263238;
 }
 
+h1 {
+	margin-bottom: 10px;
+	font-size: 70px;
+	font-size: 70px;
+	font-family: Arial, sans-serif;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: Helvetica, cambria, sans-serif;
+	color: whitesmoke;
+	text-align: center;
+}
+
 nav {
 	height: 70px;
 	display: flex;
@@ -12,7 +31,6 @@ nav {
 	justify-content: space-between;
 	padding: 0px 20px;
 }
-
 
 nav a {
 	color: whitesmoke;
@@ -34,18 +52,9 @@ nav a:visited{
 	color: #263238;
 }
 
-
-h3 {
-	font-size: 24px;
-	font-family: Helvetica, cambria, sans-serif;
-	color: whitesmoke;
-	text-align: center;
-}
-
 ul li {
 	display: inline-block;
 	color: whitesmoke;
-	
 }
 
 ul {
@@ -56,7 +65,6 @@ a {
 	text-decoration: none;
 	margin: 0px 20px;
 }
-
 
 .main-banner {
 	background-attachment: fixed;
@@ -69,26 +77,14 @@ a {
 	align-items: center;
 	color: whitesmoke;
 	position: relative;
-
 }
 
 #home-banner {
-	background-image: linear-gradient(30deg, rgba(0,0,0,0.6), rgba(50,50,50,0.6)), url("../assets/banner-image.jpg");
+	background-image: linear-gradient(30deg, rgba(0,0,0,0.3), rgba(50,50,50,0.6)), url("../assets/banner-image.jpg");
 }
 
 #egypt-banner {
-	background-image: linear-gradient(30deg, rgba(0,0,0,0.6), rgba(50,50,50,0.6)), url("http://images.kuoni.co.uk/73/luxor-hotel-and-casino-29028599-1446220647-ImageGalleryLightboxLarge.jpg");
-}
-
-.wrap{
-	padding: 40px;
-}
-
-h1 {
-	margin-bottom: 10px;
-	font-size: 70px;
-	font-size: 70px;
-	font-family: Arial, sans-serif;
+	background-image: linear-gradient(30deg, rgba(0,0,0,0.3), rgba(50,50,50,0.6)), url("http://images.kuoni.co.uk/73/luxor-hotel-and-casino-29028599-1446220647-ImageGalleryLightboxLarge.jpg");
 }
 
 #country-titles{
@@ -101,7 +97,6 @@ h1 {
 	padding: 0px 250px;
 }
 
-
 .align-left {
 	text-align: left;
 	text-decoration: underline;
@@ -111,12 +106,6 @@ h1 {
 	text-align: right;
 	text-decoration: underline;
 }
-
-h2 {
-	font-family: Arial, sans-serif;
-	font-weight: 200;
-}
-
 
 .credits {
 	margin: 0;
@@ -135,6 +124,34 @@ h2 {
 	margin-right: 50px;
 }
 
+.credits-center {
+	text-align: center;
+}
+
+.wrapper {
+	height: 250px;
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.wrapper-second-page {
+	height: 250px;
+	padding: 40px;
+}
+
+.wrap{
+	padding: 40px;
+}
+
+ol li {
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	font-weight: 200;
+}
+
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -144,12 +161,6 @@ footer {
 	color: whitesmoke;
 	padding: 0px 30px;
 	margin-top: 30px;
-}
-
-ol li {
-	font-size: 24px;
-	font-family: Arial, sans-serif;
-	font-weight: 200;
 }
 
 footer a {
@@ -164,42 +175,21 @@ footer a:active {
 	color: yellow;
 }
 
-footer a:visited {
-	color: #F06543;
-}
-
-footer a:unvisited {
-	color: #009587;
-}
-/*footer a:visited {
-	color: red;
-}*/
-/*footer a:active {
-	
-}*/
-
-.wrapper {
-	height: 250px;
-	padding: 40px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-}
-
 footer > p { 
 	color: #009587;
 }
-
-/*changing font size for social icons*/
 
 footer li {
 	font-size: 30px;
 }
 
+#centered-image {
+	display: block;
+	margin: auto;
+}
+
 img {
-	height: 250px;
-	
+	height: 250px;	
 }
 
 img:hover {
