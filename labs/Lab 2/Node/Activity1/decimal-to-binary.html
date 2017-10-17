@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1 id="first">Decimal Converter</h1>
+
+	<div id="dec2bin">
+		<fieldset>
+			<legend><b>Convert to Binary!</b></legend>
+			<h1>Decimal to Binary</h1>
+			<b>Insert Decimal Number: </b>
+			<input type="text" name="deci_bin" id="deci_bin" size="15" maxlength="10"/>
+			<input type="button" value="Convert!" onclick="dec2bin()">
+			<br><br>
+			<div id="result_bin"></div>
+		</fieldset>
+	</div>
+
+	<div id="dec2hex">
+		<fieldset>
+			<legend><b>Convert to Hexadecimal!</b></legend>
+			<h1>Decimal to Hexadecimal</h1>
+			<b>Insert Decimal Number: </b>
+			<input type="text" name="deci_hex" id="deci_hex" size="15" maxlength="10"/>
+			<input type="button" value="Convert!" onclick="dec2hex()">
+			<br><br>
+			<div id="result_hex"></div>
+		</fieldset>
+	</div>
+
+	<div id="dec2oct">
+		<fieldset>
+			<legend><b>Convert to Octal!</b></legend>
+			<h1>Decimal to Octal</h1>
+			<b>Insert Decimal Number: </b>
+			<input type="text" name="deci_oct" id="deci_oct" size="15" maxlength="10"/>
+			<input type="button" value="Convert!" onclick="dec2oct()">
+			<br><br>
+			<div id="result_oct"></div>
+		</fieldset>
+	</div>
+
+</body>
+</html>

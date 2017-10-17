@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pizza Form</title>
+	<link href="pizzaform.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+	<div id="wrap">
+		<form action="#" id="pizzaform">
+		
+		<div class="cont_order">
+		<fieldset>
+			<legend>Make your own pizza!</legend>
+				<label>Size of the Pizza</label>
+				<label class="radiolabel"><input type="radio" name="selectedpizza" value="round6" onclick="calculateTotal()"> Round Pizza 6 slices - serves 3 people ($5.50)
+				</label>
+				 <br>
+				 <label class="radiolabel"><input type="radio" name="selectedpizza" value="round8" onclick="calculateTotal()"> Round Pizza 8 slices" - serves 4 people ($7.99)
+				</label>
+				<br>
+				<label class="radiolabel"><input type="radio" name="selectedpizza" value="round10" onclick="calculateTotal()"> Round Pizza 10 slices - serves 5 people($9.50)
+				</label>
+				<br>
+				<label class="radiolabel"><input type="radio" name="selectedpizza" value="round12" onclick="calculateTotal()"> Round Pizza 12 slices - serves 6 people($11.38)
+				</label>
+				<br>
+				<label>Topping</label>
+				<input type="checkbox" name="topping" id="topping1" value="None" onclick="calculateTotal()">None<br>
+				<input type="checkbox" name="topping" id="topping2" value="Mushroom" onclick="calculateTotal()">Mushroom($5)<br>	
+				<input type="checkbox" name="topping" id="topping3" value="Sun" onclick="calculateTotal()">Sun Dried Tomatoes($5)<br>	
+				<input type="checkbox" name="topping" id="topping4" value="chicken" onclick="calculateTotal()">chicken($7)<br>	
+				<input type="checkbox" name="topping" id="topping5" value="beef" onclick="calculateTotal()">Ground beef($8)<br>	
+				<input type="checkbox" name="topping" id="topping6" value="shrimps" onclick="calculateTotal()">Shrimps($10)<br>	
+				<input type="checkbox" name="topping" id="topping7" value="pineapple" onclick="calculateTotal()">Pineapple($5)<br>	
+				<input type="checkbox" name="topping" id="topping8" value="steak" onclick="calculateTotal()">Steak($9)<br>	
+				<input type="checkbox" name="topping" id="topping9" value="avocado" onclick="calculateTotal()">Avocado($5)<br>	
+				<input type="checkbox" name="topping" id="topping10" value="broccoli" onclick="calculateTotal()">Broccoli($8)
+<br>	
+				<input type="checkbox" name="topping" id="topping11" value="olives" onclick="calculateTotal()">Green Olives($7)<br>
+				<input type="checkbox" name="topping" id="topping12" value="garlic" onclick="calculateTotal()">Roasted Garlic($2)<br>	
+				<br>
+				<label for="includecheese">Extra Cheese($5) <input type="checkbox" id="includecheese" name="includecheese" onclick="calculateTotal()"></label>
+				
+				<p>
+                    <label for='includeinscription' class="inlinelabel">Include Inscription($20)</label>
+                    <input type="checkbox" id="includedelivery" name='includedelivery' onclick="calculateTotal()" >           
+                          <input type="text"  id="theinscription" name="theinscription" placeholder="Special Instructions"  >
+                </p>
+                
+                <div id="totalPrice"></div>
+		</fieldset>
+	   </div>
+
+	</form>
+	</div>
+	
+</body>
+</html>

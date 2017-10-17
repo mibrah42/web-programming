@@ -1,0 +1,30 @@
+body {
+	text-align: center;
+	background-color: #3B3738;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#dec2bin {
+	background-color: #C63D0F;
+}
+
+#dec2hex {
+	background-color: #FDF3E7;
+}
+
+#dec2oct {
+	background-color: #7E8F7C;
+}
+
+#first {
+	color: #C63D0F;
+}
+
+fieldset{
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+	border-style: dashed;
+	border-color: black;
+}
+

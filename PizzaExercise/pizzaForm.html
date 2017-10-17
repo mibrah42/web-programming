@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Form</title>
+    <script type="text/javascript" src="pizzaCalculations.js"></script>
+    <link href="pizzaform.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="hideTotal()">
+    <div id="wrap">
+        <form action="" id="pizzaform">
+        
+            <div class="cont_order">
+               <fieldset>
+                <legend>Make Your Own Pizza!</legend>
+                <label>Size Of the Pizza</label>
+                <label class='radiolabel'>
+                    <input type="radio"  name="selectedpizza" value="Round6" onclick="calculateTotal()"> Round Pizza 6 slices -  serves 3 people ($5.50)
+                </label>
+                
+                <br>
+                <label class='radiolabel'>
+                    <input type="radio"  name="selectedpizza" value="Round8" onclick="calculateTotal()"> Round Pizza 8 slices" - serves 4 people ($7.99)
+                </label>
+                <br>
+
+                <label class='radiolabel'>
+                    <input type="radio"  name="selectedpizza" value="Round10" onclick="calculateTotal()"> Round Pizza 10 slices - serves 5 people($9.50)
+                </label>
+                <br>
+
+                <label class='radiolabel'>
+                    <input type="radio"  name="selectedpizza" value="Round12" onclick="calculateTotal()" >Round Pizza 12 slices - serves 6 people($11.38)
+                </label>
+                <br>
+                <br>
+             
+                <label >Topping</label>
+                <input type="radio"  id="topping" name="topping1" value="None"  onclick="calculateTotal()">None<br>
+                <input type="radio"  id="topping" name="topping2" value="Mushroom" onclick="calculateTotal()">Mushroom($5)<br>
+                 <input type="radio" id="topping" name="topping3" value="Sun" onclick="calculateTotal()">Sun Dried Tomatoes($5)<br>
+                <input type="radio"  id="topping" name="topping4" value="chicken" onclick="calculateTotal()">chicken($7)<br>
+                <input type="radio"  id="topping" name="topping5" value="beef" onclick="calculateTotal()">ground beef($8)<br>
+                <input type="radio"  id="topping" name="topping6" value="shrimps" onclick="calculateTotal()">shrimps($10)<br>
+                <input type="radio"  id="topping" name="topping7" value=
+                "pineapple" onclick="calculateTotal()">Pineapple($5)<br>
+                <input type="radio"  id="topping" name="topping8" value="steak" onclick="calculateTotal()">Steak($9)<br>
+                <input type="radio"  id="topping" name="topping9" value="avocado" onclick="calculateTotal()">Avocado($5)<br>
+                <input type="radio"  id="topping" name="topping10" value="tuna" onclick="calculateTotal()">Tuna($5)<br>
+                <input type="radio"  id="topping" name="topping11" value="broccoli" onclick="calculateTotal()">Broccoli($8)<br>
+                <input type="radio"  id="topping" name="topping12" value="olives" onclick="calculateTotal()">Green Olives($7)<br>
+                <input type="radio"  id="topping" name="topping13" value="garlic" onclick="calculateTotal()">Roasted Garlic($2)<br>             
+                <p>
+                <label for='includecheese' class="inlinelabel">Extra Cheese($5)</label>
+               <input type="checkbox" id="includecheese" name='includecheese' onclick="calculateTotal()" >
+               </p>
+               
+                <p>
+                    <label for='includeinscription' class="inlinelabel">Include Inscription($20)</label>
+                    <input type="checkbox" id="includedelivery" name='includedelivery' onclick="calculateTotal()" >           
+                          <input type="text"  id="theinscription" name="theinscription" value="Special Instructions"  >
+                </p>
+                
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+            
+        	<div class="cont_details">
+            	<fieldset>
+                <legend>Contact Details</legend>
+                <label for='name'>Name</label>
+                <input type="text" id="name" name='name' >
+                <br>
+                <label for='address'>Address</label>
+                <input type="text" id="address" name='address' >
+                <br>
+                <label for='phonenumber'>Phone Number</label>
+                <input type="text"  id="phonenumber" name='phonenumber'>
+                <br>
+                <label for='email'>Email Address</label>
+                <input type="email" id="email" name='email' >
+                <br>
+                </fieldset>
+            </div>
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" >
+        </div>  
+       </form>
+	</div>
+
+</body>
+</html>

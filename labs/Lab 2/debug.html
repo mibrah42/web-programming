@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+</head>
+<body>
+	<h1 style="text-align: center">My first Mean Calculator</h1>
+
+	<script type="text/javascript">
+
+		function sayHello(user){
+			document.write("hello "+user+"<br>");
+			console.log(user);
+		}
+
+		sayHello("Mohamed");
+		
+
+		function mean(a,b,c,d,e){
+			var sum = a+b+c+d+e;
+			console.log(a,b,c,d,e,sum);
+
+			var average = sum/5;
+
+			document.write("The mean of your grades is: " + average);
+		}
+
+		mean(90,87,67,98,56);
+
+		function sayGoodBye(user){
+			document.write("<br>Good Bye " + user);
+			console.log(user);
+		}
+
+		sayGoodBye("Mohamed");
+	</script>
+	
+</body>
+</html>

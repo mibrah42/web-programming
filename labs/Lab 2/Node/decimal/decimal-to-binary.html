@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1 id="first">Convert Your Number!</h1>
+	<br>
+	<div id="converter">
+		<fieldset>
+			<h1>Convert Your Decimal</h1>
+			<b>Insert Decimal Number: </b>
+			<input type="text" name="deci_num" id="deci_num" size="15" maxlength="10"/>
+			<br><br>
+			<h3>Choose Type of Conversion: </h3>
+			<select name="drop-list" id="drop-down">
+				<option id ="1" value="Binary">Binary</option>
+				<option id= "2" value="Hexadecimal">Hexadecimal</option>
+				<option id="3" value="Octal">Octal</option>
+			</select>
+			<br><br>
+			<input type="button" value="Convert!" onclick="converter()"/>
+			<br><br>
+			<div id="result"></div>
+		</fieldset>
+	</div>
+
+</body>
+</html>
